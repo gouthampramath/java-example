@@ -1,20 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deploy
+  name: java
+  namespace: devops
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: java
+  replicas: 1
   template:
     metadata:
-      name: nginx
       labels:
         app: java
     spec:
       containers:
-      - name: nginx
-        image: nginx
-        ports:
-        - containerPort: 80
+      - name: java
+        image: rajashekar85/java:25
