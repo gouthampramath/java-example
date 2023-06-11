@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: java
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: java
+    spec:
+      containers:
+      - name: java
+        image: goutham/java:20
