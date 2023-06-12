@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: java
-        image: rajashekar85/java:25
+        image: gouthampramath/dockerpush:javapipeline_23
