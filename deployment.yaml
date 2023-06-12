@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: java
-        image: gouthampramath/dockerpush:javapipeline_23
+        image: gouthampramath/dockerpush:javapipeline_30
